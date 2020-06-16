@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+:root {
+  --color-blue-medium: #0b5de2;
+  --color-blue-light: #4a9bf7;
+  --color-blue-dark: #041e7c;
+  --color-white: #fff;
+  --font-dark: #131516;
+  --font-light: #f2f3f4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
