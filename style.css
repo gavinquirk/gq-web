@@ -23,6 +23,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
 }
 
 h1,
@@ -79,4 +80,24 @@ h6 {
 
 #introduction img {
   width: 650px;
+}
+
+/* Meet */
+#meet {
+  background-color: var(--color-blue-medium);
+  color: var(--font-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 50px;
+}
+
+#meet h2 {
+  font-size: 35px;
+  padding-bottom: 20px;
+}
+
+#meet p {
+  width: 65%;
 }
