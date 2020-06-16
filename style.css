@@ -4,6 +4,7 @@
 /* font-family: 'Open Sans', sans-serif; */
 /* font-family: 'Roboto', sans-serif; */
 
+/* Color Variables */
 :root {
   --color-blue-medium: #0b5de2;
   --color-blue-light: #4a9bf7;
@@ -13,12 +14,27 @@
   --font-light: #f2f3f4;
 }
 
+/* Global Styles and Resets */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Navigation */
 .navigation {
   padding: 20px;
   display: flex;
@@ -39,4 +55,28 @@
   font-family: 'Roboto', sans-serif;
   color: inherit;
   text-decoration: none;
+}
+
+/* Introduction */
+#introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#introduction h1 {
+  font-size: 45px;
+  margin-bottom: 20px;
+  letter-spacing: 4px;
+}
+
+#introduction h4 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+#introduction img {
+  width: 650px;
 }
