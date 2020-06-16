@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
 
+/* Font Families */
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+
 :root {
   --color-blue-medium: #0b5de2;
   --color-blue-light: #4a9bf7;
@@ -13,4 +17,26 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.navigation {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-item {
+  padding: 3px 5px;
+}
+
+.nav-link {
+  font-family: 'Roboto', sans-serif;
+  color: inherit;
+  text-decoration: none;
 }
