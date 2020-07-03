@@ -13,7 +13,6 @@
   --font-dark: #131516;
   --font-light: #f2f3f4;
   --bottom-margin: 20px;
-  --section-padding: 20px 0px;
 }
 
 /* Global Styles and Resets */
@@ -27,6 +26,13 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   background-color: var(--color-white);
+}
+
+section {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  padding: 20px 0px;
 }
 
 h1,
@@ -104,12 +110,8 @@ ul {
 
 /* Meet */
 #meet {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
   background-color: var(--color-blue-medium);
   color: var(--font-light);
-  padding: var(--section-padding);
 }
 
 .meet-subcontainer {
@@ -123,10 +125,6 @@ ul {
 
 /* Skills */
 #skills {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  padding: var(--section-padding);
   background: linear-gradient(
     180deg,
     var(--color-blue-medium) 50%,
@@ -170,14 +168,10 @@ ul {
   margin-left: -1em;
 }
 
-/* Footer */
+/* Certifications */
 #certifications {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
   background-color: var(--color-blue-medium);
   color: var(--font-light);
-  padding: var(--section-padding);
 }
 
 .certifications-subcontainer {
