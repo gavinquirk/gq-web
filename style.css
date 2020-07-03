@@ -12,6 +12,7 @@
   --color-white: #fff;
   --font-dark: #131516;
   --font-light: #f2f3f4;
+  --bottom-padding: 20px;
 }
 
 /* Global Styles and Resets */
@@ -24,9 +25,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
+  background-color: var(--color-white);
 }
 
 h1,
@@ -36,6 +35,7 @@ h4,
 h5,
 h6 {
   font-family: 'Roboto', sans-serif;
+  padding-bottom: var(--bottom-padding);
 }
 
 ul {
@@ -44,7 +44,7 @@ ul {
 
 .outer-container {
   display: grid;
-  grid-template-columns: minmax(0px, 1fr) 1100px minmax(0px, 1fr);
+  grid-template-columns: minmax(0px, 1fr) minmax(700px, 1100px) minmax(0px, 1fr);
 }
 
 .inner-container {
@@ -91,13 +91,13 @@ ul {
 
 #introduction h1 {
   font-size: 45px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   letter-spacing: 4px;
 }
 
 #introduction h4 {
   font-size: 25px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 #introduction img {
@@ -128,22 +128,50 @@ ul {
 
 /* Skills */
 #skills {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background-color: var(--color-blue-medium);
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  padding: 20px 0px;
+  background: linear-gradient(
+    180deg,
+    var(--color-blue-medium) 50%,
+    var(--color-white) 50%
+  );
 }
 
 .skills-box {
+  grid-column: 2 / 8;
   background-color: #fff;
   display: flex;
   justify-content: space-evenly;
   padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 1px 2px 15px 2px rgba(8, 8, 8, 0.5);
 }
 
 .skills-box > div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
+}
+
+.skills-box i {
+  font-size: 50px;
+  padding-bottom: 20px;
+  color: var(--color-blue-medium);
+}
+
+.skills-box li {
+  padding: 5px 0px;
+}
+
+.skills-box ul li::before {
+  content: '\2022';
+  color: var(--color-blue-medium);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
