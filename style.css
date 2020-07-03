@@ -13,6 +13,7 @@
   --font-dark: #131516;
   --font-light: #f2f3f4;
   --bottom-margin: 20px;
+  --default-border-radius: 5px;
 }
 
 /* Global Styles and Resets */
@@ -43,6 +44,14 @@ h5,
 h6 {
   font-family: 'Roboto', sans-serif;
   margin-bottom: var(--bottom-margin);
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
 }
 
 ul {
@@ -139,7 +148,7 @@ ul {
   justify-content: space-evenly;
   padding: 20px;
   border: 1px solid rgb(139, 139, 139);
-  border-radius: 5px;
+  border-radius: var(--default-border-radius);
   box-shadow: 1px 2px 15px 2px rgba(8, 8, 8, 0.5);
 }
 
@@ -166,6 +175,36 @@ ul {
   display: inline-block;
   width: 1em;
   margin-left: -1em;
+}
+
+/* Portfolio */
+.portfolio-subcontainer {
+  grid-column: 2 / 8;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.portfolio-grid img {
+  width: 100%;
+  border-radius: var(--default-border-radius);
+}
+
+.portfolio-more {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.portfolio-more button {
+  background-color: transparent;
+  color: var(--color-blue-light);
+}
+
+.portfolio-more button:hover {
+  color: var(--color-blue-dark);
 }
 
 /* Certifications */
