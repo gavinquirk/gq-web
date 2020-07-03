@@ -6,9 +6,9 @@
 
 /* Color Variables */
 :root {
-  --color-blue-medium: #0b5de2;
-  --color-blue-light: #4a9bf7;
-  --color-blue-dark: #041e7c;
+  --color-primary-medium: #0b5de2;
+  --color-primary-light: #4a9bf7;
+  --color-primary-dark: #041e7c;
   --color-white: #fff;
   --font-dark: #131516;
   --font-light: #f2f3f4;
@@ -43,7 +43,29 @@ h4,
 h5,
 h6 {
   font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 300;
   margin-bottom: var(--bottom-margin);
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 25px;
+}
+
+h6 {
+  font-size: 22px;
 }
 
 button {
@@ -119,7 +141,7 @@ ul {
 
 /* Meet */
 #meet {
-  background-color: var(--color-blue-medium);
+  background-color: var(--color-primary-medium);
   color: var(--font-light);
 }
 
@@ -128,7 +150,6 @@ ul {
 }
 
 #meet h2 {
-  font-size: 35px;
   text-align: center;
 }
 
@@ -136,7 +157,7 @@ ul {
 #skills {
   background: linear-gradient(
     180deg,
-    var(--color-blue-medium) 50%,
+    var(--color-primary-medium) 50%,
     var(--color-white) 50%
   );
 }
@@ -161,7 +182,7 @@ ul {
 .skills-box i {
   font-size: 50px;
   padding-bottom: 20px;
-  color: var(--color-blue-medium);
+  color: var(--color-primary-medium);
 }
 
 .skills-box li {
@@ -170,7 +191,7 @@ ul {
 
 .skills-box ul li::before {
   content: '\2022';
-  color: var(--color-blue-medium);
+  color: var(--color-primary-medium);
   font-weight: bold;
   display: inline-block;
   width: 1em;
@@ -200,16 +221,16 @@ ul {
 
 .portfolio-more button {
   background-color: transparent;
-  color: var(--color-blue-light);
+  color: var(--color-primary-light);
 }
 
 .portfolio-more button:hover {
-  color: var(--color-blue-dark);
+  color: var(--color-primary-dark);
 }
 
 /* Certifications */
 #certifications {
-  background-color: var(--color-blue-medium);
+  background-color: var(--color-primary-medium);
   color: var(--font-light);
 }
 
@@ -220,4 +241,10 @@ ul {
 
 .certifications-subcontainer img {
   width: 20%;
+}
+
+/* Utilities */
+.primary-underline {
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary-medium);
 }
