@@ -13,6 +13,7 @@
   --font-dark: #131516;
   --font-light: #f2f3f4;
   --bottom-margin: 20px;
+  --section-padding: 20px 0px;
 }
 
 /* Global Styles and Resets */
@@ -108,7 +109,7 @@ ul {
   grid-template-columns: repeat(8, 1fr);
   background-color: var(--color-blue-medium);
   color: var(--font-light);
-  padding: 20px 0px;
+  padding: var(--section-padding);
 }
 
 .meet-subcontainer {
@@ -125,7 +126,7 @@ ul {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  padding: 20px 0px;
+  padding: var(--section-padding);
   background: linear-gradient(
     180deg,
     var(--color-blue-medium) 50%,
@@ -167,4 +168,23 @@ ul {
   display: inline-block;
   width: 1em;
   margin-left: -1em;
+}
+
+/* Footer */
+#certifications {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  background-color: var(--color-blue-medium);
+  color: var(--font-light);
+  padding: var(--section-padding);
+}
+
+.certifications-subcontainer {
+  grid-column: 2 / 8;
+  display: flex;
+}
+
+.certifications-subcontainer img {
+  width: 20%;
 }
