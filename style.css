@@ -124,6 +124,7 @@ ul {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-bottom: 0px;
 }
 
 #introduction h1 {
@@ -228,6 +229,15 @@ ul {
   color: var(--color-primary-dark);
 }
 
+/* Contact */
+.contact-subcontainer {
+  grid-column: 2 / 8;
+}
+
+.contact-subcontainer form {
+  width: 100%;
+}
+
 /* Certifications */
 #certifications {
   background-color: var(--color-primary-medium);
@@ -247,4 +257,29 @@ ul {
 .primary-underline {
   text-decoration: underline;
   text-decoration-color: var(--color-primary-medium);
+}
+
+input[type='text'],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: var(--default-border-radius);
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type='submit'] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
+  background-color: #45a049;
 }
