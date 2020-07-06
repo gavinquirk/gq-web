@@ -229,6 +229,17 @@ ul {
   color: var(--color-primary-dark);
 }
 
+/* Testimonials */
+.testimonials-subcontainer {
+  grid-column: 2 / 8;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
 /* Contact */
 .contact-subcontainer {
   grid-column: 2 / 8;
