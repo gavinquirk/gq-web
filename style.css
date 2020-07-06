@@ -29,6 +29,7 @@ body {
   background-color: var(--color-white);
 }
 
+/* Grid and Layout */
 section {
   grid-column: 1 / -1;
   display: grid;
@@ -36,6 +37,11 @@ section {
   padding: 20px 0px;
 }
 
+.subcontainer {
+  grid-column: 2 / 8;
+}
+
+/* Headings */
 h1,
 h2,
 h3,
@@ -78,6 +84,32 @@ button {
 
 ul {
   list-style: none;
+}
+
+/* Inputs */
+input[type='text'],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: var(--default-border-radius);
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type='submit'] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
+  background-color: #45a049;
 }
 
 .outer-container {
@@ -146,10 +178,6 @@ ul {
   color: var(--font-light);
 }
 
-.meet-subcontainer {
-  grid-column: 2 / 8;
-}
-
 #meet h2 {
   text-align: center;
 }
@@ -163,8 +191,8 @@ ul {
   );
 }
 
-.skills-box {
-  grid-column: 2 / 8;
+#skills > .subcontainer {
+  /* grid-column: 2 / 8; */
   background-color: #fff;
   display: flex;
   justify-content: space-evenly;
@@ -174,23 +202,23 @@ ul {
   box-shadow: 1px 2px 15px 2px rgba(8, 8, 8, 0.5);
 }
 
-.skills-box > div {
+#skills > .subcontainer > div {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.skills-box i {
+#skills > .subcontainer i {
   font-size: 50px;
   padding-bottom: 20px;
   color: var(--color-primary-medium);
 }
 
-.skills-box li {
+#skills > .subcontainer li {
   padding: 5px 0px;
 }
 
-.skills-box ul li::before {
+#skills > .subcontainer ul li::before {
   content: '\2022';
   color: var(--color-primary-medium);
   font-weight: bold;
@@ -200,10 +228,6 @@ ul {
 }
 
 /* Portfolio */
-.portfolio-subcontainer {
-  grid-column: 2 / 8;
-}
-
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -230,21 +254,13 @@ ul {
 }
 
 /* Testimonials */
-.testimonials-subcontainer {
-  grid-column: 2 / 8;
-}
-
 .testimonial-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
 }
 
 /* Contact */
-.contact-subcontainer {
-  grid-column: 2 / 8;
-}
-
 .contact-subcontainer form {
   width: 100%;
 }
@@ -255,12 +271,11 @@ ul {
   color: var(--font-light);
 }
 
-.certifications-subcontainer {
-  grid-column: 2 / 8;
+#certifications > .subcontainer {
   display: flex;
 }
 
-.certifications-subcontainer img {
+#certifications > .subcontainer img {
   width: 20%;
 }
 
@@ -270,27 +285,11 @@ ul {
   text-decoration-color: var(--color-primary-medium);
 }
 
-input[type='text'],
-select,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: var(--default-border-radius);
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type='submit'] {
-  background-color: #4caf50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type='submit']:hover {
-  background-color: #45a049;
+/* Media Queries */
+@media only screen and (max-width: 800px) {
+  .subcontainer {
+    grid-column: 1 / -1;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
 }
