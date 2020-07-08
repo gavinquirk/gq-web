@@ -283,7 +283,7 @@ input[type='submit']:hover {
 
 /* Certifications */
 #certifications {
-  background-color: var(--color-primary-medium);
+  /* background-color: var(--color-primary-medium); */
   color: var(--font-light);
 }
 
@@ -293,6 +293,34 @@ input[type='submit']:hover {
 
 #certifications > .subcontainer img {
   width: 20%;
+}
+
+/* Footer */
+#footer {
+  background-color: var(--color-primary-medium);
+  color: var(--font-light);
+}
+
+#footer .icon-links {
+  text-align: center;
+}
+
+#footer a {
+  color: var(--font-light);
+}
+
+#footer i {
+  font-size: 50px;
+  margin: 20px;
+}
+
+#footer a:hover {
+  color: var(--color-primary-light);
+}
+
+#footer p {
+  font-size: 10px;
+  text-align: center;
 }
 
 /* Utilities */
