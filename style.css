@@ -14,6 +14,7 @@
   --font-light: #f2f3f4;
   --bottom-margin: 20px;
   --default-border-radius: 5px;
+  --text-small: 14px;
 }
 
 /* Global Styles and Resets */
@@ -114,7 +115,7 @@ input[type='submit']:hover {
 
 .outer-container {
   display: grid;
-  grid-template-columns: minmax(0px, 1fr) minmax(700px, 1366px) minmax(0px, 1fr);
+  grid-template-columns: minmax(0px, 1fr) minmax(350px, 1100px) minmax(0px, 1fr);
 }
 
 .inner-container {
@@ -247,6 +248,7 @@ input[type='submit']:hover {
 .portfolio-more button {
   background-color: transparent;
   color: var(--color-primary-light);
+  font-size: var(--text-small);
 }
 
 .portfolio-more button:hover {
@@ -258,6 +260,20 @@ input[type='submit']:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
+}
+
+.testimonial > h6 {
+  margin-bottom: 0px;
+}
+
+.testimonial > span {
+  display: inline-block;
+  font-size: var(--text-small);
+  margin-bottom: 5px;
+}
+
+.testimonial > p {
+  font-style: italic;
 }
 
 /* Contact */
