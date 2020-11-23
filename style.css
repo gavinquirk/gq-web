@@ -87,6 +87,15 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+}
+
 /* Inputs */
 input[type='text'],
 select,
@@ -337,10 +346,27 @@ nav a {
   font-style: italic;
 }
 
-/* Contact */
-.contact-subcontainer form {
-  width: 100%;
+/* LinkedIn */
+#linkedin .subcontainer {
+  grid-column: 4 / -1;
+  background-color: var(--color-primary-medium);
+  border-radius: var(--default-border-radius) 0px 0px
+    var(--default-border-radius);
+  color: var(--font-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
+
+#linkedin .subcontainer h4 {
+  margin-bottom: 0;
+}
+
+/* Contact */
+/* .contact-subcontainer form {
+  width: 100%;
+} */
 
 /* Certifications */
 #certifications {
@@ -376,7 +402,7 @@ nav a {
 }
 
 #footer a:hover {
-  color: var(--color-primary-light);
+  color: var(--color-primary-dark);
 }
 
 #footer p {
