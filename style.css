@@ -14,6 +14,7 @@
   --font-light: #f2f3f4;
   --bottom-margin: 20px;
   --default-border-radius: 5px;
+  --default-box-shadow: 1px 2px 15px 2px rgba(8, 8, 8, 0.5);
   --text-small: 14px;
 }
 
@@ -124,14 +125,14 @@ input[type='submit']:hover {
 
 .outer-container {
   display: grid;
-  grid-template-columns: minmax(0px, 1fr) minmax(350px, 1100px) minmax(0px, 1fr);
+  grid-template-columns: minmax(0px, 1fr) minmax(350px, 1366px) minmax(0px, 1fr);
 }
 
 .inner-container {
   grid-column: 2 / 3;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  box-shadow: 2px 4px 20px 5px rgba(8, 8, 8, 0.5);
+  box-shadow: var(--default-box-shadow);
   position: relative;
 }
 
@@ -209,7 +210,7 @@ nav a {
   justify-content: center;
   align-items: center;
   font-size: 30px;
-  transition: all 0.5s;
+  transition: all 0.2s;
   z-index: 50;
   opacity: 0;
 }
@@ -270,7 +271,7 @@ nav a {
   padding: 20px;
   border: 1px solid rgb(139, 139, 139);
   border-radius: var(--default-border-radius);
-  box-shadow: 1px 2px 15px 2px rgba(8, 8, 8, 0.5);
+  box-shadow: var(--default-box-shadow);
 }
 
 #skills > .subcontainer > div {
@@ -357,6 +358,7 @@ nav a {
   justify-content: center;
   align-items: center;
   padding: 10px;
+  box-shadow: var(--default-box-shadow);
 }
 
 #linkedin .subcontainer h4 {
