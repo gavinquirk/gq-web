@@ -264,7 +264,6 @@ nav a {
 }
 
 #skills > .subcontainer {
-  /* grid-column: 2 / 8; */
   background-color: #fff;
   display: flex;
   justify-content: space-evenly;
@@ -422,7 +421,48 @@ nav a {
 @media only screen and (max-width: 800px) {
   .subcontainer {
     grid-column: 1 / -1;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+
+  #linkedin > .subcontainer {
+    border-radius: var(--default-border-radius);
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  #introduction > img {
+    margin-top: 75px;
+  }
+
+  #skills > .subcontainer {
+    flex-direction: column;
+  }
+
+  #skills > .subcontainer > .frontend {
+    margin-bottom: 20px;
+  }
+
+  .testimonial-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #introduction > img {
+    margin-top: 50px;
+  }
+
+  .subcontainer {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+  #linkedin > .subcontainer {
+    grid-column: 2 / -1;
   }
 }
