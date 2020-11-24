@@ -231,6 +231,10 @@ nav a {
   padding-bottom: 0px;
 }
 
+#introduction > img {
+  margin-top: 80px;
+}
+
 #introduction h1 {
   font-size: 45px;
   letter-spacing: 4px;
