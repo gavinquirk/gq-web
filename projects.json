@@ -1,0 +1,34 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Proshop",
+      "description": "Custom built online store, with PayPal payment and admin management"
+    },
+    {
+      "id": 2,
+      "name": "Idyllwild",
+      "description": "A website for the band Idyllwild, created using React and Firebase"
+    },
+    {
+      "id": 3,
+      "name": "Movie App",
+      "description": "Find information about your favorite movies. Created by web scraping the data from IMDB and Rottentomatoes"
+    },
+    {
+      "id": 4,
+      "name": "Covfefevirus",
+      "description": "Coronavirus information, gathered by reverse engineering the John Hopkins API"
+    },
+    {
+      "id": 5,
+      "name": "Simple Banking System",
+      "description": "A command line credit card based banking system, created using Python"
+    },
+    {
+      "id": 6,
+      "name": "Devcamper API",
+      "description": "API providing accounts, uploads and information related to programming bootcamps"
+    }
+  ]
+}
