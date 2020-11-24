@@ -45,14 +45,22 @@ window.onload = () => {
   ];
 
   // For each project, insert into grid
-  // TODO: Hoverable images show description and links
+  // TODO: Create custom images, add github and deployment icons/links
   const portfolioGrid = document.getElementById('portfolio-grid');
 
   projects.forEach((project) => {
     portfolioGrid.innerHTML += `
-        <div>
-          <img src=${project.image} alt=${project.name} />
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src=${project.image} alt=${project.name}>
+          </div>
+          <div class="flip-card-back">
+            <h4>${project.name}</h4>
+            <p>${project.description}</p>
+          </div>
         </div>
+      </div>
       `;
   });
 };
