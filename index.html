@@ -10,7 +10,7 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
     <title>Gavin Quirk - Web Development</title>
   </head>
   <body>
@@ -40,7 +40,7 @@
         </div>
         <!-- Intro -->
         <section id="introduction">
-          <img src="/img/gq-desk.svg" alt="Gavin at desk" />
+          <img src="./src/img/gq-desk.svg" alt="Gavin at desk" />
         </section>
         <!-- Meet -->
         <section id="meet">
@@ -188,20 +188,20 @@
         <section id="certifications">
           <div class="subcontainer">
             <img
-              src="./img/badge_html_css.png"
+              src="./src/img/badge_html_css.png"
               class="badge"
               alt="html and css badge"
             />
             <img
-              src="./img/badge_javascript_jquery.png"
+              src="./src/img/badge_javascript_jquery.png"
               alt="javascript and jquery badge"
             />
             <img
-              src="./img/badge_node_express.png"
+              src="./src/img/badge_node_express.png"
               alt="node and express badge"
             />
-            <img src="./img/badge_react.png" alt="react badge" />
-            <img src="./img/badge_sql_nosql.png" alt="sql and no sql badge" />
+            <img src="./src/img/badge_react.png" alt="react badge" />
+            <img src="./src/img/badge_sql_nosql.png" alt="sql and no sql badge" />
           </div>
         </section>
         <!-- Footer -->
@@ -226,5 +226,6 @@
       </div>
     </div>
   </body>
-  <script type="module" src="./main.js"></script>
+  <!-- <script type="module" src="./src/js/main.js"></script> -->
+  <script src='dist/bundle.js'></script>
 </html>

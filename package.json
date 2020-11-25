@@ -2,9 +2,10 @@
   "name": "gq-web",
   "version": "1.0.0",
   "description": "Gavin Quirk Web Developer Website",
-  "main": "main.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "build:prod": "webpack -p"
   },
   "repository": {
     "type": "git",
@@ -17,5 +18,9 @@
   },
   "homepage": "https://github.com/gavinquirk/gq-web#readme",
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "webpack": "^5.6.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
+  }
 }
