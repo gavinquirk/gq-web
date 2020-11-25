@@ -17,6 +17,7 @@
   --default-box-shadow: 1px 2px 15px 2px rgba(8, 8, 8, 0.5);
   --light-box-shadow: 2px 2px 5px 2px rgba(7, 7, 7, 0.3);
   --text-small: 14px;
+  --transition-short: 0.1s ease-in-out;
 }
 
 html {
@@ -478,6 +479,7 @@ nav a {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  background-color: #fff;
 }
 
 .flip-card-links {
@@ -489,6 +491,11 @@ nav a {
 .flip-card-links i {
   font-size: 50px;
   color: var(--color-primary-medium);
+  transition: var(--transition-short);
+}
+
+.flip-card-links i:hover {
+  color: var(--color-primary-dark);
 }
 
 #Proshop .flip-card-front {
