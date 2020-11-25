@@ -19,6 +19,10 @@
   --text-small: 14px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Global Styles and Resets */
 * {
   margin: 0;
@@ -171,7 +175,8 @@ input[type='submit']:hover {
   width: 100%;
   background-color: #fff;
   border-radius: 8px;
-  transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.35s;
+  /* transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.35s; */
+  transition: all ease-in-out 0.2s;
 }
 
 .top {
