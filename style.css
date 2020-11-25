@@ -311,8 +311,6 @@ nav a {
 }
 
 .portfolio-grid img {
-  width: 100%;
-  height: 100%;
   border-radius: var(--default-border-radius);
 }
 
@@ -455,15 +453,28 @@ nav a {
 }
 
 .flip-card-front {
-  background-color: #bbb;
   color: black;
 }
 
 .flip-card-back {
-  background-color: var(--color-primary-medium);
-  color: white;
   transform: rotateY(180deg);
   padding: 20px;
+}
+
+#Proshop .flip-card-front {
+  background-color: #7aa3f1;
+}
+
+#Idyllwild .flip-card-front {
+  background-color: #93e993;
+}
+
+#MovieApp .flip-card-front {
+  background-color: #eff870;
+}
+
+#Devcamper .flip-card-front {
+  background-color: #f6ba75;
 }
 
 /* Media Queries */

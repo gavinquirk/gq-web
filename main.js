@@ -19,28 +19,28 @@ window.onload = () => {
       name: 'Proshop',
       description:
         'Custom built online store, with PayPal payment and admin management',
-      image: 'https://via.placeholder.com/640x360',
+      image: './img/proshop-logo-1.png',
     },
     {
       id: 2,
       name: 'Idyllwild',
       description:
         'A website for the band Idyllwild, created using React and Firebase',
-      image: 'https://via.placeholder.com/640x360',
+      image: './img/idyllwild-logo-1.png',
     },
     {
       id: 3,
-      name: 'Movie App',
+      name: 'MovieApp',
       description:
         'Find information about your favorite movies. Created by web scraping the data from IMDB and Rottentomatoes',
-      image: 'https://via.placeholder.com/640x360',
+      image: './img/movieapp-logo-1.png',
     },
     {
       id: 4,
-      name: 'Devcamper API',
+      name: 'Devcamper',
       description:
         'API providing accounts, uploads and information related to programming bootcamps',
-      image: 'https://via.placeholder.com/640x360',
+      image: './img/devcamper-logo-1.png',
     },
   ];
 
@@ -50,7 +50,7 @@ window.onload = () => {
 
   projects.forEach((project) => {
     portfolioGrid.innerHTML += `
-      <div class="flip-card">
+      <div class="flip-card" id=${project.name}>
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img src=${project.image} alt=${project.name}>
