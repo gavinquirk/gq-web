@@ -1,0 +1,38 @@
+const projects = [
+  {
+    id: 1,
+    name: 'Proshop',
+    description:
+      'Custom built online store, with PayPal payment and admin management',
+    image: './img/proshop-logo-1.png',
+    github: 'https://github.com/gavinquirk/proshop',
+    deployment: 'https://gq-proshop.herokuapp.com/',
+  },
+  {
+    id: 2,
+    name: 'Idyllwild',
+    description:
+      'A website for the band Idyllwild, created using React and Firebase',
+    image: './img/idyllwild-logo-1.png',
+    github: 'https://github.com/gavinquirk/idyllwild',
+    deployment: 'https://idyllwild.firebaseapp.com/',
+  },
+  {
+    id: 3,
+    name: 'Devcamper',
+    description:
+      'API providing accounts, uploads and information related to programming bootcamps',
+    image: './img/devcamper-logo-1.png',
+    github: 'https://github.com/gavinquirk/devcamper_api',
+    deployment: 'https://gq-devcamper.herokuapp.com/',
+  },
+  {
+    id: 4,
+    name: 'MovieApp',
+    description:
+      'Find information about your favorite movies. Created by web scraping the data from IMDB and Rottentomatoes',
+    image: './img/movieapp-logo-1.png',
+    github: 'https://github.com/gavinquirk/movie-app',
+    deployment: '',
+  },
+];
