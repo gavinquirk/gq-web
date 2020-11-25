@@ -58,6 +58,10 @@ window.onload = () => {
           <div class="flip-card-back">
             <h4>${project.name}</h4>
             <p>${project.description}</p>
+            <div class="flip-card-links">
+              <a href=${project.deployment}><i class="far fa-window-restore"></i></a>
+              <a href=${project.github}><i class="fab fa-github"></i></a>
+            </div>
           </div>
         </div>
       </div>
