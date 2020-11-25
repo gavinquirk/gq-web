@@ -450,6 +450,7 @@ nav a {
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
+
 /* TEMP -- keep cards flipped  */
 /* .flip-card .flip-card-inner {
   transform: rotateY(180deg);
@@ -546,6 +547,16 @@ nav a {
 
   #skills > .subcontainer {
     flex-direction: column;
+  }
+
+  #skills > .subcontainer > div {
+    display: block;
+    text-align: center;
+  }
+
+  #skills > .subcontainer ul {
+    text-align: left;
+    margin-left: 20px;
   }
 
   #skills > .subcontainer > .frontend {
