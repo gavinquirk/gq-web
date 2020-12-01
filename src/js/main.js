@@ -1,3 +1,5 @@
+// Remove if using separate css file
+import '../css/style.css';
 import { projects } from './projects.js';
 
 // --- Navigation ---
