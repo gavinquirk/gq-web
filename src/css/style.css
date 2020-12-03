@@ -379,9 +379,17 @@ nav a {
 }
 
 /* Contact */
-/* .contact-subcontainer form {
+/* Override contact inputs */
+#contact #fname,
+#contact #lname {
   width: 100%;
-} */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: var(--default-border-radius);
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
 
 /* Certifications */
 #certifications {
