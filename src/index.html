@@ -1,230 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./main.css" />
-    <title>Gavin Quirk - Web Development</title>
-  </head>
-  <body>
-    <div class="outer-container">
-      <div class="inner-container">
-        <!-- Navigation -->
-        <nav class="nav-overlay">
-          <ul>
-            <li><a href="#meet">Meet</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="https://www.linkedin.com/in/gavin-quirk/" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com/gavinquirk" target="_blank">Github</a></li>
-            <li><a href="mailto:gavinquirk.work@gmail.com" target="_blank">Email</a></li>
-          </ul>
-        </nav>
-        <div class="toolbar">
-          <div id="hamburger-wrapper">
-            <div class="circle hamburger-button">
-              <span class="line top"></span>
-              <span class="line middle"></span>
-              <span class="line bottom"></span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./main.css" />
+  <title>Gavin Quirk - Web Development</title>
+</head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MPSJ8HFWYG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-MPSJ8HFWYG');
+</script>
+<body>
+  <div class="outer-container">
+    <div class="inner-container">
+      <!-- Navigation -->
+      <nav class="nav-overlay">
+        <ul>
+          <li><a href="#meet">Meet</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://www.linkedin.com/in/gavin-quirk/" target="_blank">LinkedIn</a></li>
+          <li><a href="https://github.com/gavinquirk" target="_blank">Github</a></li>
+          <li><a href="mailto:gavinquirk.work@gmail.com" target="_blank">Email</a></li>
+        </ul>
+      </nav>
+      <div class="toolbar">
+        <div id="hamburger-wrapper">
+          <div class="circle hamburger-button">
+            <span class="line top"></span>
+            <span class="line middle"></span>
+            <span class="line bottom"></span>
+          </div>
+        </div>
+      </div>
+      <!-- Intro -->
+      <section id="introduction">
+        <img src="./img/gq-desk.svg" alt="Gavin at desk" />
+      </section>
+      <!-- Meet -->
+      <section id="meet">
+        <div class="subcontainer">
+          <h2>My name's Gavin. Nice to meet you</h2>
+          <p>
+            I am a freelance web developer based in California, and I create
+            everything from simple personal sites to complex and customized
+            full-stack applications.
+          </p>
+          <p>
+            I like to use modern and compatable
+            technologies, allowing for the creation of fast and beautiful
+            websites.
+          </p>
+        </div>
+      </section>
+      <!-- Skills -->
+      <section id="skills">
+        <div class="subcontainer">
+          <div class="frontend">
+            <i class="fas fa-file-code"></i>
+            <h5>Front End</h5>
+            <ul>
+              <li>Design</li>
+              <li>Mobile Responsive</li>
+              <li>SPA Frameworks</li>
+              <li>HTML, CSS, JavaScript</li>
+            </ul>
+          </div>
+          <div class="backend">
+            <i class="fas fa-server"></i>
+            <h5>Back End</h5>
+            <ul>
+              <li>Web APIs</li>
+              <li>Third Party APIs</li>
+              <li>Database Design</li>
+              <li>JavaScript, Python, PHP, C#</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio -->
+      <section id="portfolio">
+        <div class="subcontainer">
+          <h2 class="primary-underline">Portfolio</h2>
+          <div class="portfolio-grid" id="portfolio-grid">
+
+          </div>
+          <!-- TEMP: REMOVED -->
+          <!-- <div class="portfolio-more">
+              <button>More &rarr;</button>
+            </div> -->
+        </div>
+      </section>
+      <!-- Testimonials -->
+      <section id="testimonials">
+        <div class="subcontainer">
+          <h2 class="primary-underline">Testimonials</h2>
+          <div class="testimonial-grid">
+            <div class="testimonial">
+              <h6>Ian Daelucian</h6>
+              <span>- CoFounder at ARTALLUS</span>
+              <p>
+                "Gavin is patient, methodical, and thinks before he acts. He
+                proves his technical skills in the delivery of his work and
+                executes on requirements with precision."
+              </p>
+            </div>
+            <div class="testimonial">
+              <h6>
+                Jeremy Knappe
+              </h6>
+              <span>- RBT/Job Coach at Liberty Employment Services</span>
+              <p>
+                "Gavin is a terrific team player that is top-notch in writing
+                front-end and back-end languages. He is dependable, easygoing,
+                and outstanding in his field."
+              </p>
+            </div>
+            <div class="testimonial">
+              <h6>Vicente Gonzalez</h6>
+              <span>- Credit Analyst | Web Developer</span>
+              <p>
+                "Very few people have the capacity to execute under pressure,
+                as does Gavin."
+              </p>
+            </div>
+            <div class="testimonial">
+              <h6>
+                Christian Lopes
+              </h6>
+              <span>- Client Service & Business Operations Manager</span>
+              <p>
+                "Gavin keeps things cool under pressure, and has an impressive
+                ability to solve complex problems and rapidly grasp new
+                concepts. His razor sharp development skills set the bar for
+                our cohort."
+              </p>
             </div>
           </div>
         </div>
-        <!-- Intro -->
-        <section id="introduction">
-          <img src="./img/gq-desk.svg" alt="Gavin at desk" />
-        </section>
-        <!-- Meet -->
-        <section id="meet">
-          <div class="subcontainer">
-            <h2>My name's Gavin. Nice to meet you</h2>
-            <p>
-              I am a freelance web developer based in California, and I create
-              everything from simple personal sites to complex and customized
-              full-stack applications.
-            </p>
-            <p>
-              I like to use modern and compatable
-              technologies, allowing for the creation of fast and beautiful
-              websites.
-            </p>
+      </section>
+      <!-- LinkedIn -->
+      <section id="linkedin">
+        <div class="subcontainer">
+          <a href="https://www.linkedin.com/in/gavin-quirk/" target="_blank">
+            <h4>Visit me on LinkedIn</h4>
+          </a>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section id="contact">
+        <div class="subcontainer">
+          <h2 class="primary-underline">Contact</h2>
+          <form action="mailto:gavinquirk.work@gmail.com" method="POST" enctype="multipart/form-data" name="email-form">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." />
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write something.." style="height: 200px;"></textarea>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </section>
+      <!-- Certifications -->
+      <section id="certifications">
+        <div class="subcontainer">
+          <img src="./img/badge_html_css.png" class="badge" alt="html and css badge" />
+          <img src="./img/badge_javascript_jquery.png" alt="javascript and jquery badge" />
+          <img src="./img/badge_node_express.png" alt="node and express badge" />
+          <img src="./img/badge_react.png" alt="react badge" />
+          <img src="./img/badge_sql_nosql.png" alt="sql and no sql badge" />
+        </div>
+      </section>
+      <!-- Footer -->
+      <section id="footer">
+        <div class="subcontainer">
+          <div class="icon-links">
+            <a href="https://www.linkedin.com/in/gavin-quirk/" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:gavinquirk.work@gmail.com" target="_blank">
+              <i class="far fa-envelope"></i>
+            </a>
+            <a href="https://github.com/gavinquirk" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
           </div>
-        </section>
-        <!-- Skills -->
-        <section id="skills">
-          <div class="subcontainer">
-            <div class="frontend">
-              <i class="fas fa-file-code"></i>
-              <h5>Front End</h5>
-              <ul>
-                <li>Design</li>
-                <li>Mobile Responsive</li>
-                <li>SPA Frameworks</li>
-                <li>HTML, CSS, JavaScript</li>
-              </ul>
-            </div>
-            <div class="backend">
-              <i class="fas fa-server"></i>
-              <h5>Back End</h5>
-              <ul>
-                <li>Web APIs</li>
-                <li>Third Party APIs</li>
-                <li>Database Design</li>
-                <li>JavaScript, Python, PHP, C#</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <!-- Portfolio -->
-        <section id="portfolio">
-          <div class="subcontainer">
-            <h2 class="primary-underline">Portfolio</h2>
-            <div class="portfolio-grid" id="portfolio-grid">
-
-            </div>
-            <!-- TEMP: REMOVED -->
-            <!-- <div class="portfolio-more">
-              <button>More &rarr;</button>
-            </div> -->
-          </div>
-        </section>
-        <!-- Testimonials -->
-        <section id="testimonials">
-          <div class="subcontainer">
-            <h2 class="primary-underline">Testimonials</h2>
-            <div class="testimonial-grid">
-              <div class="testimonial">
-                <h6>Ian Daelucian</h6>
-                <span>- CoFounder at ARTALLUS</span>
-                <p>
-                  "Gavin is patient, methodical, and thinks before he acts. He
-                  proves his technical skills in the delivery of his work and
-                  executes on requirements with precision."
-                </p>
-              </div>
-              <div class="testimonial">
-                <h6>
-                  Jeremy Knappe
-                </h6>
-                <span>- RBT/Job Coach at Liberty Employment Services</span>
-                <p>
-                  "Gavin is a terrific team player that is top-notch in writing
-                  front-end and back-end languages. He is dependable, easygoing,
-                  and outstanding in his field."
-                </p>
-              </div>
-              <div class="testimonial">
-                <h6>Vicente Gonzalez</h6>
-                <span>- Credit Analyst | Web Developer</span>
-                <p>
-                  "Very few people have the capacity to execute under pressure,
-                  as does Gavin."
-                </p>
-              </div>
-              <div class="testimonial">
-                <h6>
-                  Christian Lopes
-                </h6>
-                <span>- Client Service & Business Operations Manager</span>
-                <p>
-                  "Gavin keeps things cool under pressure, and has an impressive
-                  ability to solve complex problems and rapidly grasp new
-                  concepts. His razor sharp development skills set the bar for
-                  our cohort."
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- LinkedIn -->
-        <section id="linkedin">
-          <div class="subcontainer">
-            <a href="https://www.linkedin.com/in/gavin-quirk/" target="_blank"><h4>Visit me on LinkedIn</h4></a>
-          </div>
-        </section>
-        <!-- Contact -->
-        <section id="contact">
-          <div class="subcontainer">
-            <h2 class="primary-underline">Contact</h2>
-            <form
-              action="mailto:gavinquirk.work@gmail.com"
-              method="POST"
-              enctype="multipart/form-data"
-              name="email-form"
-            >
-              <label for="fname">First Name</label>
-              <input
-                type="text"
-                id="fname"
-                name="firstname"
-                placeholder="Your name.."
-              />
-              <label for="lname">Last Name</label>
-              <input
-                type="text"
-                id="lname"
-                name="lastname"
-                placeholder="Your last name.."
-              />
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Write something.."
-                style="height: 200px;"
-              ></textarea>
-              <input type="submit" value="Submit" />
-            </form>
-          </div>
-        </section>
-        <!-- Certifications -->
-        <section id="certifications">
-          <div class="subcontainer">
-            <img
-              src="./img/badge_html_css.png"
-              class="badge"
-              alt="html and css badge"
-            />
-            <img
-              src="./img/badge_javascript_jquery.png"
-              alt="javascript and jquery badge"
-            />
-            <img
-              src="./img/badge_node_express.png"
-              alt="node and express badge"
-            />
-            <img src="./img/badge_react.png" alt="react badge" />
-            <img src="./img/badge_sql_nosql.png" alt="sql and no sql badge" />
-          </div>
-        </section>
-        <!-- Footer -->
-        <section id="footer">
-          <div class="subcontainer">
-            <div class="icon-links">
-              <a href="https://www.linkedin.com/in/gavin-quirk/" target="_blank">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-              <a href="mailto:gavinquirk.work@gmail.com" target="_blank">
-                <i class="far fa-envelope"></i>
-              </a>
-              <a href="https://github.com/gavinquirk" target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-            <p>
-              Illustration credit to <a href="vecteezy.com">Vecteezy.com</a>
-            </p>
-          </div>
-        </section>
-      </div>
+          <p>
+            Illustration credit to <a href="vecteezy.com">Vecteezy.com</a>
+          </p>
+        </div>
+      </section>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
