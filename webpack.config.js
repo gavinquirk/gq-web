@@ -20,7 +20,10 @@ module.exports = {
       template: './src/index.html',
     }),
     new CopyPlugin({
-      patterns: [{ from: './src/img', to: './img' }],
+      patterns: [
+        { from: './src/img', to: './img' },
+        { from: './src/favicon.ico', to: './' },
+      ],
     }),
     new MiniCssExtractPlugin(),
   ],
