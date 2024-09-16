@@ -239,7 +239,7 @@ nav a {
   padding-bottom: 0px;
 }
 
-#introduction > img {
+#introduction>img {
   margin-top: 80px;
 }
 
@@ -272,14 +272,12 @@ nav a {
 
 /* Skills */
 #skills {
-  background: linear-gradient(
-    180deg,
-    var(--color-primary-medium) 50%,
-    var(--color-white) 50%
-  );
+  background: linear-gradient(180deg,
+      var(--color-primary-medium) 50%,
+      var(--color-white) 50%);
 }
 
-#skills > .subcontainer {
+#skills>.subcontainer {
   background-color: #fff;
   display: flex;
   justify-content: space-evenly;
@@ -289,23 +287,23 @@ nav a {
   box-shadow: var(--default-box-shadow);
 }
 
-#skills > .subcontainer > div {
+#skills>.subcontainer>div {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#skills > .subcontainer i {
+#skills>.subcontainer i {
   font-size: 50px;
   padding-bottom: 20px;
   color: var(--color-primary-medium);
 }
 
-#skills > .subcontainer li {
+#skills>.subcontainer li {
   padding: 5px 0px;
 }
 
-#skills > .subcontainer ul li::before {
+#skills>.subcontainer ul li::before {
   content: '\2022';
   color: var(--color-primary-medium);
   font-weight: bold;
@@ -347,17 +345,17 @@ nav a {
   grid-gap: 20px;
 }
 
-.testimonial > h6 {
+.testimonial>h6 {
   margin-bottom: 0px;
 }
 
-.testimonial > span {
+.testimonial>span {
   display: inline-block;
   font-size: var(--text-small);
   margin-bottom: 5px;
 }
 
-.testimonial > p {
+.testimonial>p {
   font-style: italic;
 }
 
@@ -365,8 +363,7 @@ nav a {
 #linkedin .subcontainer {
   grid-column: 4 / -1;
   background-color: var(--color-primary-medium);
-  border-radius: var(--default-border-radius) 0px 0px
-    var(--default-border-radius);
+  border-radius: var(--default-border-radius) 0px 0px var(--default-border-radius);
   color: var(--font-light);
   display: flex;
   justify-content: center;
@@ -378,6 +375,32 @@ nav a {
 #linkedin .subcontainer h4 {
   margin-bottom: 0;
 }
+
+/* Repair */
+/* #repair {
+  background-color: var(--color-primary-medium);
+  color: var(--font-light);
+} */
+
+#repair h2 {
+  text-align: left;
+}
+
+#repair p {
+  margin-bottom: var(--bottom-margin);
+}
+
+#repair .location-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+}
+
+#repair span {
+  margin-left: auto;
+  margin-right: 0;
+}
+
 
 /* Contact */
 /* Override contact inputs */
@@ -398,11 +421,11 @@ nav a {
   color: var(--font-light);
 }
 
-#certifications > .subcontainer {
+#certifications>.subcontainer {
   display: flex;
 }
 
-#certifications > .subcontainer img {
+#certifications>.subcontainer img {
   width: 20%;
 }
 
@@ -540,13 +563,13 @@ nav a {
     display: none;
   }
 
-  #linkedin > .subcontainer {
+  #linkedin>.subcontainer {
     border-radius: var(--default-border-radius);
   }
 }
 
 @media only screen and (max-width: 650px) {
-  #introduction > img {
+  #introduction>img {
     margin-top: 75px;
   }
 
@@ -554,21 +577,21 @@ nav a {
     display: none;
   }
 
-  #skills > .subcontainer {
+  #skills>.subcontainer {
     flex-direction: column;
   }
 
-  #skills > .subcontainer > div {
+  #skills>.subcontainer>div {
     display: block;
     text-align: center;
   }
 
-  #skills > .subcontainer ul {
+  #skills>.subcontainer ul {
     text-align: left;
     margin-left: 20px;
   }
 
-  #skills > .subcontainer > .frontend {
+  #skills>.subcontainer>.frontend {
     margin-bottom: 20px;
   }
 
@@ -582,7 +605,7 @@ nav a {
 }
 
 @media only screen and (max-width: 500px) {
-  #introduction > img {
+  #introduction>img {
     margin-top: 50px;
   }
 
@@ -591,7 +614,7 @@ nav a {
     margin-left: 40px;
   }
 
-  #linkedin > .subcontainer {
+  #linkedin>.subcontainer {
     grid-column: 2 / -1;
   }
 }
