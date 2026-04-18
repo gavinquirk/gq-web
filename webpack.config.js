@@ -22,6 +22,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         { from: './src/img', to: './img' },
+        { from: './src/css', to: './css' }, // This ensures your CSS folder is moved to the server
         { from: './src/favicon.ico', to: './' },
       ],
     }),
