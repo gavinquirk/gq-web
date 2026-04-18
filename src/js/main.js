@@ -1,4 +1,3 @@
-import '../css/style.css';
 import { projects } from './projects.js';
 
 // --- Navigation ---
@@ -19,17 +18,18 @@ const portfolioGrid = document.getElementById('portfolio-grid');
 
 projects.forEach((project) => {
   portfolioGrid.innerHTML += `
-      <div class="flip-card" id=${project.name}>
+      <div class="flip-card" id="${project.name}">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src=${project.image} alt=${project.name}>
+            <img src="${project.image}" alt="${project.name}">
           </div>
           <div class="flip-card-back">
             <h4>${project.name}</h4>
             <p>${project.description}</p>
             <div class="flip-card-links">
-              <a href=${project.deployment} target="_blank"><i class="far fa-window-restore"></i></a>
-              <a href=${project.github} target="_blank"><i class="fab fa-github"></i></a>
+              <a href="${project.github}" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
             </div>
           </div>
         </div>
