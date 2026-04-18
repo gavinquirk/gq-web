@@ -518,7 +518,7 @@ nav a {
 .flip-card-links {
   width: 50%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .flip-card-links i {
